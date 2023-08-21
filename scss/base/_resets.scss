@@ -1,12 +1,9 @@
-*,*::after,*::before {
+*,
+*::after,
+*::before {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-*:focus {
-    // outline: ;
-    // outline-offset: ;
 }
 
 html {
@@ -17,7 +14,8 @@ html {
 
 img {
     display: flex;
-    object-fit: cover; /* contain */
+    object-fit: cover;
+    /* contain */
 }
 
 a {
@@ -25,11 +23,17 @@ a {
     display: inline-block;
 }
 
-ul,ol {
+ul,
+ol {
     list-style: none;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     margin: 0;
 }
 
@@ -41,9 +45,90 @@ body {
 
 .container {
     width: 100%;
-    max-width: 1200px; // *
+    max-width: 1170px; // *
     margin-left: auto;
     margin-right: auto;
-    padding-left: 5rem; // *
-    padding-right: 5rem;// *
+    padding-left: 3rem; // *
+    padding-right: 3rem; // *
+}
+
+.active {
+    color: $peach-color !important;
+}
+
+
+
+.get__in__container {
+    background-color: $peach-color;
+    border-radius: 1.5rem;
+    padding: 7.2rem 9.6rem 7.2rem 9.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: -6.5rem;
+    position: relative;
+    z-index: 1;
+}
+
+.get__in__title {
+    width: 100%;
+    max-width: 300px;
+    color: $white-color;
+    font-family: $black-color;
+    font-size: 4rem;
+    font-weight: 500;
+    line-height: 1;
+    /* 100% */
+    margin-bottom: 1rem;
+}
+
+.get__in__text {
+    width: 100%;
+    max-width: 459px;
+    color: $white-color;
+    font-family: $body-ff;
+    opacity: 1;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.62;
+    /* 162.5% */
+}
+
+.hero__web {}
+
+.hero__web__container {
+    background-color: $peach-color;
+    border-radius: 1.5rem;
+    padding: 4.4rem 19rem 4.4rem 19.1rem;
+    margin-bottom: 16rem;
+}
+
+.hero__web__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.hero__web__title {
+    color: $white-color;
+    text-align: center;
+    font-family: $body-ff;
+    font-size: 4.8rem;
+    font-weight: 500;
+    line-height: 1;
+    margin-bottom: 1rem;
+    /* 100% */
+}
+
+.hero__web__text {
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    opacity: 1;
+    font-family: $body-ff;
+    font-size: 1.6;
+    font-weight: 400;
+    line-height: 1.62;
+    /* 162.5% */
 }

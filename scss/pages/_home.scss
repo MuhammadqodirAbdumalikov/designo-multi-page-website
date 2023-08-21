@@ -1,3 +1,54 @@
 main {
     flex-grow: 1;
 }
+
+.hero__wrapper {
+    background-color: $peach-color;
+    border-radius: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 9.5rem;
+    padding-right: 5.6rem;
+    background-image: url(../../images/Oval\ \(1\).png);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-bottom: 16rem;
+}
+
+.hero__title {
+    width: 100%;
+    max-width: 540px;
+    margin-bottom: 1.1rem;
+}
+
+.hero__text {
+    width: 100%;
+    max-width: 445px;
+    margin-bottom: 4rem;
+}
+
+
+@media screen and (max-width: 990px) {
+    .hero__wrapper {
+        display: flex;
+        flex-direction: column;
+        padding-left: 5rem;
+        padding-right: 3rem;
+        text-align: center;
+        padding-top: 3rem;
+
+    }
+
+    .hero__text {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .hero__title {
+        font-size: 3.2rem;
+    }
+
+}

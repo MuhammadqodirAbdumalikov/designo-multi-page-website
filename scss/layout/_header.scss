@@ -1,0 +1,41 @@
+.header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 7.1rem;
+    margin-bottom: 7rem;
+}
+.sitenav__list {
+    display: flex;
+    align-items: center;
+    gap: 4.2rem;
+}
+.sitenav__item {    
+    font-family: $body-ff;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.4rem; /* 100% */
+    letter-spacing: 2px;
+}
+.sitenav__link {
+    color: $black-color;
+    &:hover{
+        border-bottom: 1px solid $dark-grey-color;
+        transition: 0.5s;
+        cursor: pointer;
+    }
+}
+.header__btn{
+    display: none;
+    border: 0;
+    background: 0;
+}
+@media screen and (max-width:675px) {
+    .header__btn{
+        display: block;
+    }
+    .sitenav__list{
+        display: none;
+    }
+    
+}

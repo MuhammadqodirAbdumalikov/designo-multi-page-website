@@ -1,0 +1,33 @@
+.location{
+    margin-bottom: 16rem;
+}
+.location__container{
+    display: flex;  
+}
+
+.location__card{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+}
+.second-card{
+    flex-direction: row-reverse;
+}
+.location__context{
+    border-radius:1.5rem;
+    max-width: 730px;
+    padding: 10rem 4rem;
+    width: 100%;
+    display: flex;
+    align-items:center;
+    background-color:$bg-color;
+}
+.location__text h2{
+    color: $peach-color;
+    margin-bottom: 2.4rem;
+}
+.location__desc{
+    align-self:flex-end;
+    margin-left: 5rem;
+}
